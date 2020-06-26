@@ -1,7 +1,11 @@
 <template>
   <div class="is-primary panel">
     <div class="panel-tabs">
-      <a v-for="period in periods" :key="period">
+      <a
+        data-test="period"
+        v-for="period in periods"
+        :key="period"
+      >
         {{ period }}
       </a>
     </div>
@@ -10,11 +14,11 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Period } from './types'
+import { Periods } from './types'
 
 export default defineComponent({
   setup() {
-    const periods: Period[] = ['today', 'this week', 'this month']
+    const periods: Periods[] = ['today', 'this week', 'this month']
 
     return {
       periods,
