@@ -1,5 +1,9 @@
 <template>
-  <Timeline />
+  <section class="section">
+    <div class="container">
+      <Timeline />
+    </div>
+  </section>
 </template>
 
 <script lang="ts">
